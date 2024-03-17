@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root{
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+}
+
+
+
+html{
+    box-sizing: border-box;
+    font-size: 18px;
+}
+body{
+    font-family: "Bai Jamjuree", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1{
+	margin-block: .5em;
+}
+
+section{
+	margin-block: 3em;
+	text-align: center;
+}
+
+header{
+	background-image: url(./images/bg-header-desktop.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 40vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5em;
+	padding-block: 2em;
+}
+
+p{
+	max-width: 50ch;
+	margin: auto;
+	color: var(--grayish-blue);
+}
+
+.btn{
+	border-radius: 990px;
+	padding: 1em 3em;
+	border: 1px transparent;
+	color: white;
+	display: inline-block;
+}
+
+.btn_green{
+	background-color: var(--strong-cyan);
+}
+
+.btn_blue{
+	background-color: var(--light-blue);
+}
+.flex{
+	display: flex;
+	gap: 1em;
+}
+
+.flex > div{
+	text-align: left;
+}
+
+.features{
+	display: flex;
+	gap: 1em;
+	/* flex-wrap: wrap; */
+	max-width: 80%;
+	margin: auto;
+}
+
+.company--brands{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1em;
+	max-width: 80%;
+	margin: 4em auto;
+}
+
+footer{
+	background-color: var(--grayish-blue);
+	padding-block: 3em;
+}
+
+footer img{
+	width: 3em;
+}
+
+footer a{
+	color: var(--dark-grayish-blue);
+	transition: color .5s ease;
+}
+
+footer a:hover{
+	color: var(--strong-cyan);
+}
+
+footer > div{
+	margin: auto;
+	max-width: 80%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+footer > div > div{
+	display: inherit;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.socials{
+	/* display: flex !important; */
+	flex-direction: row;
+}
+
+@media (max-width: 700px){
+
+	header, section{
+		padding-inline: 1em; 
+	}
+
+	header{
+		text-align: center;
+	}
+
+	a{
+		margin-block: .3em;
+	}
+
+	.flex, .features, .company--brands{
+		flex-direction: column;
+	}
+	
+	.flex > div{
+		text-align: center;
+	}
+
+	footer > div{
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	footer > div > div{
+		gap: 2em;
+	}
+
+	
+}
